@@ -11,10 +11,10 @@ from random import randint
 from time import sleep
 
 env_values = dotenv_values()
-CHAT_ID = int(env_values['CHAT_ID'])
-TO_SLEEP_BETWEEN_COMMAND = int(env_values['TO_SLEEP_BETWEEN_COMMAND'])
-MIN_SLEEP_RANGE_BEFORE_FIRST_MESSAGE = int(env_values['MIN_SLEEP_RANGE_BEFORE_FIRST_MESSAGE'])
-MAX_SLEEP_RANGE_BEFORE_FIRST_MESSAGE = int(env_values['MAX_SLEEP_RANGE_BEFORE_FIRST_MESSAGE'])
+CHAT_ID = 947376615753658409
+TO_SLEEP_BETWEEN_COMMAND = 86200
+MIN_SLEEP_RANGE_BEFORE_FIRST_MESSAGE = 10
+MAX_SLEEP_RANGE_BEFORE_FIRST_MESSAGE = 70
 
 if platform == "win32" and (3, 8, 0) <= version_info < (3, 9, 0):
     asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
