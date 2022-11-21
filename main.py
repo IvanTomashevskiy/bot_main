@@ -12,9 +12,9 @@ from time import sleep
 
 env_values = dotenv_values()
 CHAT_ID = 947376615753658409
-TO_SLEEP_BETWEEN_COMMAND = 86200
+TO_SLEEP_BETWEEN_COMMAND = 86400
 MIN_SLEEP_RANGE_BEFORE_FIRST_MESSAGE = 10
-MAX_SLEEP_RANGE_BEFORE_FIRST_MESSAGE = 70
+MAX_SLEEP_RANGE_BEFORE_FIRST_MESSAGE = 180
 
 if platform == "win32" and (3, 8, 0) <= version_info < (3, 9, 0):
     asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
